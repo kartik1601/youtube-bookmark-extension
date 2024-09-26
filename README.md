@@ -1,6 +1,7 @@
 # YouTube Bookmark Extension
 
 A Chrome extension that allows users to bookmark specific moments in YouTube videos, enhancing the viewing experience by enabling quick navigation to favorite parts of the content. This project utilizes Manifest V3 for improved performance and security.
+Jump to see screenshots of the project [Result Images](#results);
 
 ## Features
 
@@ -54,7 +55,14 @@ To get a local copy up and running, follow these steps:
 - Use the play button to jump to your bookmarks.
 - Use the delete button to remove currently saved bookmarks.
 
+<a id="results"></a>
 ## Screenshots
 
+### Not a Youtube Video URL (has 'watch' keyword in it!)
 ![image](https://github.com/user-attachments/assets/e404d8fb-fec3-4c43-aca8-805c6f12dd8f)
+### Youtube video page
 ![image](https://github.com/user-attachments/assets/00799d99-031a-42a4-95b2-3997cbb85af3)
+### Adding Bookmarks at different Timestamps
+![image](https://github.com/user-attachments/assets/9bd57d09-3439-49ac-82b1-d04d90bf9f57)
+### Deleting and Playing a bookmark
+![image](https://github.com/user-attachments/assets/83ec0030-7221-411c-88f6-f45c7d20a546)
