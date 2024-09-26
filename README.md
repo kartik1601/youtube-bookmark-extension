@@ -1,7 +1,8 @@
 # YouTube Bookmark Extension
 
 A Chrome extension that allows users to bookmark specific moments in YouTube videos, enhancing the viewing experience by enabling quick navigation to favorite parts of the content. This project utilizes Manifest V3 for improved performance and security.
-Jump to see screenshots of the project [Result Images](#results);
+
+#### Jump to see [Screenshots](#results) of the project.
 
 ## Features
 
