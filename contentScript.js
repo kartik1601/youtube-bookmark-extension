@@ -12,7 +12,9 @@
         } else if (type === "PLAY") {
             youtubePlayer.currentTime = value;
         } else if (type === "DELETE") {
-            currentVideoBookmarks = currentVideoBookmarks.filter((b) => b.time != value);
+            currentVideoBookmarks = currentVideoBookmarks.filter((b) => {
+                return !(b.time === value.time && b.desc === value.desc);
+            });
             chrome.storage.sync.set({[currentVideo] : JSON.stringify(currentVideoBookmarks)});
 
             response(currentVideoBookmarks);
@@ -32,7 +34,7 @@
 
         currentVideoBookmarks = await fetchBookmarks();
 
-        if (!bookmarkBtnExists) {
+        if (!bookmarkBtnExists && document.getElementsByClassName("ytp-left-controls").length > 0) {
             const bookmarkBtn = document.createElement("img");
 
             bookmarkBtn.src = chrome.runtime.getURL("assets/bookmark.png");
